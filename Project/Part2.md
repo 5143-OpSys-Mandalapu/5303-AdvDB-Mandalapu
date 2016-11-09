@@ -1,7 +1,7 @@
 ###Part 2: Queries on the data in mongodb.
 
 #
-1.	db.yelp.business.find({$or: [{"full_address" : {$regex : ".**89117.**"}},{"full_address" : {$regex : ".**89122.**"}}]}).count()
+1.	db.yelp.business.find({$or: [{"full_address" : {$regex : ".*89117.*"}},{"full_address" : {$regex : ".*89122.*"}}]}).count()
 
 2.	db.yelp.business.find({"full_address": {$regex: ".*Las Vegas.*"}}).count()
 
