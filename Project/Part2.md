@@ -11,7 +11,7 @@
 
 5.	db.yelp.review.find({ $and : [{"business_id" : "P1fJb2WQ1mXoiudj8UE44w"}, {"stars" : 5}]}).count()
 
-6.	db.yelp.user.find({ "yelping_since" : {$lte:"2011-11"}}).count()
+6.	db.yelp.user.find({ "yelping_since" : {$lte:"2011-11"}}, {"_id":0,"name":1})
 
 7.  INCOMP	db.yelp.user.find({"name":"Lynda"}, {_id:1})
 
