@@ -7,7 +7,7 @@
 
 3.	 db.yelp.business.find({ "loc" : { $geoWithin : { $centerSphere: [ [ -80.839186, 35.226504 ], 5 / 3963.2 ] } } }).count()
 
-4.	db.yelp.review.find({"_id" : ObjectId("581a51abbd45e57b60ae9203")}).count()
+4.	db.yelp.review.find({"business_id" : "hB3kH0NgM5LkEWMnMMDnHw")}).count()
 
 5.	db.yelp.review.find({ $and : [{"_id" : ObjectId("P1fJb2WQ1mXoiudj8UE44w")}, {"stars" : 5}]}).count()
 
