@@ -3,8 +3,7 @@
 #
 1.	db.yelp.business.find({$or: [{"full_address" : {$regex : ".**89117.**"}},{"full_address" : {$regex : ".**89122.**"}}]}).count()
 
-
-2.	db.yelp.business.find({ "city" : "Las Vegas"}).count()
+2.	db.yelp.business.find({"full_address": {$regex: ".*Las Vegas.*"}}).count()
 
 3.	 db.yelp.business.find({ "loc" : { $geoWithin : { $centerSphere: [ [ -80.839186, 35.226504 ], 5 / 3963.2 ] } } }).count()
 
