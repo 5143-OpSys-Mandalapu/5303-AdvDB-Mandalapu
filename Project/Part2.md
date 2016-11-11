@@ -32,6 +32,7 @@
 	  db.yelp.business.find({"business_id":review_result},{"city":1})
 
 13.	db.yelp.business.find({$or: [{"full_address" : {$regex : ".*75205.*"}},{"full_address" : {$regex : ".*75225.*"}}]})
+	Returns an empty set, which means there is no restaurant in these locations.
 
 14.	
 
