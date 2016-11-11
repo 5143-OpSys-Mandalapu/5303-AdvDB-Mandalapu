@@ -36,6 +36,6 @@
 
 14.	
 
-15.	
+15.	db.yelp.review.aggregate([{$match:{business_id:"mVHrayjG3uZ_RLHkLj-AMg"}},{$group:{_id:'$stars', count:{$sum:1}}}])
 
-16.	 db.yelp.review.aggregate([{$group:{_id: "$business_id", avgstar:{$avg:"$stars"}}},{$match: {avgstar:{$gt:3.5}}}])
+16.	db.yelp.review.aggregate([{$group:{_id: "$business_id", avgstar:{$avg:"$stars"}}},{$match: {avgstar:{$gt:3.5}}}])
